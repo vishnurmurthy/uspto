@@ -1,5 +1,4 @@
-import csv
-import sys
+import csv, pickle
 
 total = 0
 datedict = {x:[0 for y in range(12)] for x in range(1900,2019)}
@@ -24,3 +23,5 @@ f.write("jhoi")
 for i in datedict:
     f.write(str(i))
     f.write('\n')
+
+pickle.dump( datedict, open( "data.p", "wb" ) )

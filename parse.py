@@ -1,4 +1,4 @@
-import csv, pickle
+import csv
 
 total = 0
 datedict = {x:[0 for y in range(12)] for x in range(1900,2019)}
@@ -15,3 +15,14 @@ with open('input.csv', newline='') as myFile:
         except:
             x=0
 print(datedict)
+print(sum([sum(datedict[x]) for x in datedict]))
+
+with open('filingVolumes.csv', 'w') as csvfile:
+    fieldnames = ['Year', 'Month', 'numTimes']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames, lineterminator = '\n')
+
+    writer.writeheader()
+    for year in datedict:
+        for month in range(12):
+            numTimes = datedict[year][month]
+            writer.writerow({'Year': year, 'Month': month+1, "numTimes":numTimes})

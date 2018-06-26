@@ -13,15 +13,5 @@ with open('input.csv', newline='') as myFile:
             datedict[int(date[0:4])][int(date[5:7])-1]+=1
             total+=1
         except:
-            print(date)
+            x=0
 print(datedict)
-print(sum([sum(datedict[x]) for x in datedict]))
-print(total)
-
-f = open('patentvolumes.txt','w')
-f.write("jhoi")
-for i in datedict:
-    f.write(str(i))
-    f.write('\n')
-
-pickle.dump( datedict, open( "data.p", "wb" ) )

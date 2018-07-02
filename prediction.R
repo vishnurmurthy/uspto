@@ -46,7 +46,7 @@ plot(google$trends ~ google$month, data= google, lwd=2, type='l', main='Google T
 
 
 ##### Merge volume Data w/ Google Trends Data
-google$month = as.Date(paste(substr(google$date, 1, 7), '01', sep='-'))
+google$month = as.Date(paste(substr(google$month, 1, 7), '01', sep='-'))
 dat = merge(dat, google);
 
 ##Define Predictor - Google Trends
@@ -91,6 +91,4 @@ par(mfrow=c(2,2));
 plot(fit)
 
 #### Prediction for the next month;
-predict.fit = predict(fit, newdata=dat2, se.fit=TRUE);
-
-
+predict.fit = predict(fit, newdata=dat2, se.fit=TRUE)

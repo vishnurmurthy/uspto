@@ -58,8 +58,6 @@ dat = merge(dat, google);
 t.lag = 1;
 id = which(dat$month[-1] != dat$month[-nrow(dat)]);
 mdat = dat[id + 1, c('month', 'volume', 's1', 's12')];
-
-
 mdat$trends1 = dat$trends[id + t.lag];
 mdat$trends2 = dat$trends[id + t.lag + 1];
 mdat$trends3 = dat$trends[id + t.lag + 2];
@@ -68,26 +66,12 @@ mdat$trends3 = dat$trends[id + t.lag + 2];
 dat1 = mdat[1:(nrow(mdat)-1), ]
 dat2 = mdat[nrow(mdat), ]
 
-##### Exploratory Data Analysis
-## Testing Autocorrelation & Seasonality
-
-acf(log(dat1$volume));
-Box.test(log(dat1$volume), type="Ljung-Box")
-
-## Testing Correlation
-plot(y = log(dat1$volume), x = dat1$trends1, main='', pch=19,
-     ylab='log(volume)', xlab= 'Google Trends - 1st week')
-abline(lm(log(dat1$volume) ~ dat1$trends1), lwd=2, col=2)
-cor.test(y = log(dat1$volume), x = dat1$trends1)
-cor.test(y = log(dat1$volume), x = dat1$trends2)
-cor.test(y = log(dat1$volume), x = dat1$trends3)
-
 ##### Fit Model;
-fit = lm(log(volume) ~ log(s1) + log(s12) + trends1, data=dat1);
+fit = lm(log(sales) ~ log(s1) + log(s12) + trends1, data=dat1);
 summary(fit)
 
 ##### Diagnostic Plot
-par(mfrow=c(2,2));
+par(mfrow=c(2,2))
 plot(fit)
 
 #### Prediction for the next month;

@@ -1,0 +1,28 @@
+'''John Smith -> silent blender
+Patent: protection from government
+
+Own / Attourney -> every nook and crany
+Attourney -> registered as IP practicing, puts application -> abstract, explanation, drawings, claims (silencer)
+File
+
+Patent Process -> drawings go to drawings division, scan and upload, file in whichever area
+classification system
+person in that area -> researches, first action, goes back to examiner, etc goes back and forth and gets accepted
+
+When someone applies for a patent, examiner doesnt know?
+
+Google Scholar, IEEE, Darwhit
+
+Technology Center 1600: Biotechnology, Organic Chemistry
+Technology Center 1700: Chemical, Materials Engineering
+Technology Center 2100: Computer Architecture, Software
+Technology Center 2400: Network, Multiplexing, Cable Security
+Technology Center 2600: Communications
+Technology Center 2800: Semiconductors, Memory, Optics, Photocopying, Circuits, Systems, Printing, Measuring, Testing
+Technology Center 2900: Design
+
+Technology Center 3600: Transportation, Construction, Agriculture, Electronic Commerce, National Security
+Technology Center 3700: Mechanical Engineering, Devices, Processes
+
+Filing a Utility Patent, Filing a Design Patent2
+'''

@@ -26,3 +26,6 @@ Technology Center 3700: Mechanical Engineering, Devices, Processes
 
 Filing a Utility Patent, Filing a Design Patent2
 '''
+1-8
+Train MSE:  20670735.6136
+Test  MSE:  24569670.0797

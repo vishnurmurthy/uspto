@@ -29,3 +29,11 @@ Filing a Utility Patent, Filing a Design Patent2
 1-8
 Train MSE:  20670735.6136
 Test  MSE:  24569670.0797
+
+1-7
+Train MSE:  20670762.0044
+Test  MSE:  24562956.8187
+
+TTS
+Train MSE:  19553550.8148
+Test  MSE:  29980086.6643
